@@ -1,0 +1,184 @@
+[debug] [2025-01-17T20:46:25.245Z] ----------------------------------------------------------------------
+[debug] [2025-01-17T20:46:25.252Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-01-17T20:46:25.252Z] CLI Version:   13.29.1
+[debug] [2025-01-17T20:46:25.253Z] Platform:      win32
+[debug] [2025-01-17T20:46:25.253Z] Node Version:  v23.5.0
+[debug] [2025-01-17T20:46:25.254Z] Time:          Fri Jan 17 2025 16:46:25 GMT-0400 (hora estándar del Atlántico)
+[debug] [2025-01-17T20:46:25.254Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-17T20:46:25.419Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-17T20:46:25.420Z] > authorizing via signed-in user (englishlearn014@gmail.com)
+[debug] [2025-01-17T20:46:25.421Z] [iam] checking project englishlearn-dec80 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-01-17T20:46:25.423Z] Checked if tokens are valid: true, expires at: 1737148498870
+[debug] [2025-01-17T20:46:25.424Z] Checked if tokens are valid: true, expires at: 1737148498870
+[debug] [2025-01-17T20:46:25.426Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/englishlearn-dec80:testIamPermissions [none]
+[debug] [2025-01-17T20:46:25.426Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/englishlearn-dec80:testIamPermissions x-goog-quota-user=projects/englishlearn-dec80
+[debug] [2025-01-17T20:46:25.426Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/englishlearn-dec80:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-17T20:46:26.080Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/englishlearn-dec80:testIamPermissions 200
+[debug] [2025-01-17T20:46:26.081Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/englishlearn-dec80:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-17T20:46:26.082Z] Checked if tokens are valid: true, expires at: 1737148498870
+[debug] [2025-01-17T20:46:26.082Z] Checked if tokens are valid: true, expires at: 1737148498870
+[debug] [2025-01-17T20:46:26.083Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/englishlearn-dec80 [none]
+[debug] [2025-01-17T20:46:26.949Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/englishlearn-dec80 200
+[debug] [2025-01-17T20:46:26.950Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/englishlearn-dec80 {"projectId":"englishlearn-dec80","projectNumber":"535459633924","displayName":"ENGLISHLEARN ","name":"projects/englishlearn-dec80","resources":{"hostingSite":"englishlearn-dec80"},"state":"ACTIVE","etag":"1_c69936d8-6bf1-4fb4-bc4d-3fcc7e8572cb"}
+[info] 
+[info] === Deploying to 'englishlearn-dec80'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-01-17T20:46:27.002Z] Checked if tokens are valid: true, expires at: 1737148498870
+[debug] [2025-01-17T20:46:27.003Z] Checked if tokens are valid: true, expires at: 1737148498870
+[debug] [2025-01-17T20:46:27.003Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/englishlearn-dec80/versions [none]
+[debug] [2025-01-17T20:46:27.004Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/englishlearn-dec80/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-01-17T20:46:28.418Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/englishlearn-dec80/versions 200
+[debug] [2025-01-17T20:46:28.419Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/englishlearn-dec80/versions {"name":"projects/535459633924/sites/englishlearn-dec80/versions/05729088eff43db7","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[englishlearn-dec80]: beginning deploy... 
+[info] i  hosting[englishlearn-dec80]: found 107151 files in ./ 
+[debug] [2025-01-17T20:47:09.400Z] [hosting] uploading with 200 concurrency
+[debug] [2025-01-17T20:47:09.403Z] [hosting] hash cache [] not populated
+[debug] [2025-01-17T20:47:09.511Z] Error: EBUSY: resource busy or locked, open 'C:\Users\Usuario\ntuser.dat.LOG2'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-01-17T20:47:09.515Z] Error: EBUSY: resource busy or locked, open 'C:\Users\Usuario\ntuser.dat.LOG1'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-01-17T20:47:09.519Z] Error: EBUSY: resource busy or locked, open 'C:\Users\Usuario\NTUSER.DAT'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-01-18T00:30:00.162Z] ----------------------------------------------------------------------
+[debug] [2025-01-18T00:30:00.168Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-01-18T00:30:00.169Z] CLI Version:   13.29.1
+[debug] [2025-01-18T00:30:00.169Z] Platform:      win32
+[debug] [2025-01-18T00:30:00.169Z] Node Version:  v23.5.0
+[debug] [2025-01-18T00:30:00.170Z] Time:          Fri Jan 17 2025 20:30:00 GMT-0400 (hora estándar del Atlántico)
+[debug] [2025-01-18T00:30:00.170Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-18T00:30:00.334Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-18T00:30:00.335Z] > authorizing via signed-in user (englishlearn014@gmail.com)
+[debug] [2025-01-18T00:30:00.335Z] [iam] checking project englishlearn-dec80 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-01-18T00:30:00.337Z] Checked if tokens are valid: true, expires at: 1737163764231
+[debug] [2025-01-18T00:30:00.338Z] Checked if tokens are valid: true, expires at: 1737163764231
+[debug] [2025-01-18T00:30:00.340Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/englishlearn-dec80:testIamPermissions [none]
+[debug] [2025-01-18T00:30:00.340Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/englishlearn-dec80:testIamPermissions x-goog-quota-user=projects/englishlearn-dec80
+[debug] [2025-01-18T00:30:00.340Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/englishlearn-dec80:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-18T00:30:01.088Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/englishlearn-dec80:testIamPermissions 200
+[debug] [2025-01-18T00:30:01.089Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/englishlearn-dec80:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-18T00:30:01.090Z] Checked if tokens are valid: true, expires at: 1737163764231
+[debug] [2025-01-18T00:30:01.091Z] Checked if tokens are valid: true, expires at: 1737163764231
+[debug] [2025-01-18T00:30:01.091Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/englishlearn-dec80 [none]
+[debug] [2025-01-18T00:30:01.757Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/englishlearn-dec80 200
+[debug] [2025-01-18T00:30:01.757Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/englishlearn-dec80 {"projectId":"englishlearn-dec80","projectNumber":"535459633924","displayName":"ENGLISHLEARN ","name":"projects/englishlearn-dec80","resources":{"hostingSite":"englishlearn-dec80"},"state":"ACTIVE","etag":"1_c69936d8-6bf1-4fb4-bc4d-3fcc7e8572cb"}
+[info] 
+[info] === Deploying to 'englishlearn-dec80'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-01-18T00:30:01.803Z] Checked if tokens are valid: true, expires at: 1737163764231
+[debug] [2025-01-18T00:30:01.804Z] Checked if tokens are valid: true, expires at: 1737163764231
+[debug] [2025-01-18T00:30:01.804Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/englishlearn-dec80/versions [none]
+[debug] [2025-01-18T00:30:01.805Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/englishlearn-dec80/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-01-18T00:30:02.915Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/englishlearn-dec80/versions 200
+[debug] [2025-01-18T00:30:02.915Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/englishlearn-dec80/versions {"name":"projects/535459633924/sites/englishlearn-dec80/versions/8fabeb91011d4354","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[englishlearn-dec80]: beginning deploy... 
+[info] i  hosting[englishlearn-dec80]: found 107136 files in ./ 
+[debug] [2025-01-18T00:30:49.540Z] [hosting] uploading with 200 concurrency
+[debug] [2025-01-18T00:30:49.543Z] [hosting] hash cache [] not populated
+[debug] [2025-01-18T00:30:49.642Z] Error: EBUSY: resource busy or locked, open 'C:\Users\Usuario\ntuser.dat.LOG2'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-01-18T00:30:49.645Z] Error: EBUSY: resource busy or locked, open 'C:\Users\Usuario\ntuser.dat.LOG1'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-01-18T00:30:49.649Z] Error: EBUSY: resource busy or locked, open 'C:\Users\Usuario\NTUSER.DAT'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-01-18T00:31:26.880Z] ----------------------------------------------------------------------
+[debug] [2025-01-18T00:31:26.887Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2025-01-18T00:31:26.888Z] CLI Version:   13.29.1
+[debug] [2025-01-18T00:31:26.888Z] Platform:      win32
+[debug] [2025-01-18T00:31:26.888Z] Node Version:  v23.5.0
+[debug] [2025-01-18T00:31:26.889Z] Time:          Fri Jan 17 2025 20:31:26 GMT-0400 (hora estándar del Atlántico)
+[debug] [2025-01-18T00:31:26.889Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-18T00:31:27.064Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-18T00:31:27.065Z] > authorizing via signed-in user (englishlearn014@gmail.com)
+[debug] [2025-01-18T00:31:27.066Z] [iam] checking project englishlearn-dec80 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-01-18T00:31:27.068Z] Checked if tokens are valid: true, expires at: 1737163764231
+[debug] [2025-01-18T00:31:27.069Z] Checked if tokens are valid: true, expires at: 1737163764231
+[debug] [2025-01-18T00:31:27.071Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/englishlearn-dec80:testIamPermissions [none]
+[debug] [2025-01-18T00:31:27.071Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/englishlearn-dec80:testIamPermissions x-goog-quota-user=projects/englishlearn-dec80
+[debug] [2025-01-18T00:31:27.071Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/englishlearn-dec80:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-18T00:31:27.701Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/englishlearn-dec80:testIamPermissions 200
+[debug] [2025-01-18T00:31:27.702Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/englishlearn-dec80:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-18T00:31:27.703Z] Checked if tokens are valid: true, expires at: 1737163764231
+[debug] [2025-01-18T00:31:27.703Z] Checked if tokens are valid: true, expires at: 1737163764231
+[debug] [2025-01-18T00:31:27.704Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/englishlearn-dec80 [none]
+[debug] [2025-01-18T00:31:28.188Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/englishlearn-dec80 200
+[debug] [2025-01-18T00:31:28.188Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/englishlearn-dec80 {"projectId":"englishlearn-dec80","projectNumber":"535459633924","displayName":"ENGLISHLEARN ","name":"projects/englishlearn-dec80","resources":{"hostingSite":"englishlearn-dec80"},"state":"ACTIVE","etag":"1_c69936d8-6bf1-4fb4-bc4d-3fcc7e8572cb"}
+[info] 
+[info] === Deploying to 'englishlearn-dec80'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-01-18T00:31:28.217Z] Checked if tokens are valid: true, expires at: 1737163764231
+[debug] [2025-01-18T00:31:28.217Z] Checked if tokens are valid: true, expires at: 1737163764231
+[debug] [2025-01-18T00:31:28.218Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/englishlearn-dec80/versions [none]
+[debug] [2025-01-18T00:31:28.218Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/englishlearn-dec80/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-01-18T00:31:29.954Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/englishlearn-dec80/versions 200
+[debug] [2025-01-18T00:31:29.955Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/englishlearn-dec80/versions {"name":"projects/535459633924/sites/englishlearn-dec80/versions/2ea6c17b6fc6b6a4","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[englishlearn-dec80]: beginning deploy... 
+[info] i  hosting[englishlearn-dec80]: found 107129 files in ./ 
+[debug] [2025-01-18T00:32:26.811Z] [hosting] uploading with 200 concurrency
+[debug] [2025-01-18T00:32:26.836Z] [hosting] hash cache [] not populated
+[debug] [2025-01-18T00:32:27.191Z] Error: EBUSY: resource busy or locked, open 'C:\Users\Usuario\ntuser.dat.LOG2'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-01-18T00:32:27.196Z] Error: EBUSY: resource busy or locked, open 'C:\Users\Usuario\ntuser.dat.LOG1'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-01-18T00:32:27.197Z] Error: EBUSY: resource busy or locked, open 'C:\Users\Usuario\NTUSER.DAT'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-01-18T00:51:46.005Z] ----------------------------------------------------------------------
+[debug] [2025-01-18T00:51:46.011Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-01-18T00:51:46.012Z] CLI Version:   13.29.1
+[debug] [2025-01-18T00:51:46.012Z] Platform:      win32
+[debug] [2025-01-18T00:51:46.013Z] Node Version:  v23.5.0
+[debug] [2025-01-18T00:51:46.013Z] Time:          Fri Jan 17 2025 20:51:46 GMT-0400 (hora estándar del Atlántico)
+[debug] [2025-01-18T00:51:46.014Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-18T00:51:46.180Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-18T00:51:46.181Z] > authorizing via signed-in user (englishlearn014@gmail.com)
+[debug] [2025-01-18T00:51:46.182Z] [iam] checking project englishlearn-dec80 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-01-18T00:51:46.184Z] Checked if tokens are valid: true, expires at: 1737163764231
+[debug] [2025-01-18T00:51:46.184Z] Checked if tokens are valid: true, expires at: 1737163764231
+[debug] [2025-01-18T00:51:46.186Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/englishlearn-dec80:testIamPermissions [none]
+[debug] [2025-01-18T00:51:46.187Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/englishlearn-dec80:testIamPermissions x-goog-quota-user=projects/englishlearn-dec80
+[debug] [2025-01-18T00:51:46.187Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/englishlearn-dec80:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-18T00:51:46.843Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/englishlearn-dec80:testIamPermissions 200
+[debug] [2025-01-18T00:51:46.843Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/englishlearn-dec80:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-18T00:51:46.844Z] Checked if tokens are valid: true, expires at: 1737163764231
+[debug] [2025-01-18T00:51:46.845Z] Checked if tokens are valid: true, expires at: 1737163764231
+[debug] [2025-01-18T00:51:46.845Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/englishlearn-dec80 [none]
+[debug] [2025-01-18T00:51:47.428Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/englishlearn-dec80 200
+[debug] [2025-01-18T00:51:47.429Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/englishlearn-dec80 {"projectId":"englishlearn-dec80","projectNumber":"535459633924","displayName":"ENGLISHLEARN ","name":"projects/englishlearn-dec80","resources":{"hostingSite":"englishlearn-dec80"},"state":"ACTIVE","etag":"1_c69936d8-6bf1-4fb4-bc4d-3fcc7e8572cb"}
+[info] 
+[info] === Deploying to 'englishlearn-dec80'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-01-18T00:51:47.467Z] Checked if tokens are valid: true, expires at: 1737163764231
+[debug] [2025-01-18T00:51:47.467Z] Checked if tokens are valid: true, expires at: 1737163764231
+[debug] [2025-01-18T00:51:47.468Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/englishlearn-dec80/versions [none]
+[debug] [2025-01-18T00:51:47.468Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/englishlearn-dec80/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-01-18T00:51:48.945Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/englishlearn-dec80/versions 200
+[debug] [2025-01-18T00:51:48.945Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/englishlearn-dec80/versions {"name":"projects/535459633924/sites/englishlearn-dec80/versions/4e93c99fa7ef9197","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[englishlearn-dec80]: beginning deploy... 
+[info] i  hosting[englishlearn-dec80]: found 106140 files in ./ 
+[debug] [2025-01-18T00:52:33.584Z] [hosting] uploading with 200 concurrency
+[debug] [2025-01-18T00:52:33.587Z] [hosting] hash cache [] not populated
+[debug] [2025-01-18T00:52:33.684Z] Error: EBUSY: resource busy or locked, open 'C:\Users\Usuario\ntuser.dat.LOG2'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-01-18T00:52:33.689Z] Error: EBUSY: resource busy or locked, open 'C:\Users\Usuario\ntuser.dat.LOG1'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-01-18T00:52:33.692Z] Error: EBUSY: resource busy or locked, open 'C:\Users\Usuario\NTUSER.DAT'
+[error] 
+[error] Error: An unexpected error has occurred.
